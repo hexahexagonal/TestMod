@@ -26,6 +26,14 @@ public class ModBlocks
                 .sound(SoundType.METAL)
             ));
 
+    public static final RegistryObject<Block> RAW_TITANIUM_BLOCK = registerBlock("raw_titanium_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)
+            ));
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
@@ -38,8 +46,7 @@ public class ModBlocks
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
-    public static void register(IEventBus eventBus)
-    {
+    public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }
 }

@@ -63,6 +63,7 @@ public class TestMod
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
         {
             event.accept(ModBlocks.TITANIUM_BLOCK);
+            event.accept(ModBlocks.RAW_TITANIUM_BLOCK);
         }
     }
 

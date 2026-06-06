@@ -1,5 +1,7 @@
 {
   "item.testmod.raw_titanium": "Raw Titanium",
   "item.testmod.titanium_ingot": "Titanium Ingot",
-  "item.testmod.titanium_block": "Block of Titanium"
+
+  "block.testmod.titanium_block": "Block of Titanium",
+  "block.testmod.raw_titanium_block": "Block of Raw Titanium"
 }

@@ -1,8 +1,6 @@
 {
-  "variants":
-  {
-    "":
-    {
+  "variants": {
+    "": {
       "model": "testmod:block/titanium_block"
     }
   }

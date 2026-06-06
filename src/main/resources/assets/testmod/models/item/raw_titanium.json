@@ -1,7 +1,6 @@
 {
   "parent": "minecraft:item/generated",
-  "textures":
-  {
+  "textures": {
     "layer0": "testmod:item/raw_titanium"
   }
 }
