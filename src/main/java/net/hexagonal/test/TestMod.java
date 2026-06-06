@@ -1,6 +1,7 @@
 package net.hexagonal.test;
 
 import com.mojang.logging.LogUtils;
+import net.hexagonal.test.block.ModBlocks;
 import net.hexagonal.test.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -36,6 +37,7 @@ public class TestMod
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -56,6 +58,11 @@ public class TestMod
         {
             event.accept(ModItems.RAW_TITANIUM);
             event.accept(ModItems.TITANIUM_INGOT);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
+        {
+            event.accept(ModBlocks.TITANIUM_BLOCK);
         }
     }
 

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cubel_all",
+  "textures":
+  {
+    "all": "testmod:block/titanium_block"
+  }
+}
